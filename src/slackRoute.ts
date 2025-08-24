@@ -11,7 +11,8 @@ slackRoute.get('/slack/callback', async (c) => {
   
       const code = c.req.query('code');
   const state = c.req.query('state');
-  console.log('code' ,code)
+  console.log('code:' ,code)
+  console.log('state:',state)
     return  c.text("test")
    })
    
