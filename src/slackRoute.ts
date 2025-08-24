@@ -6,7 +6,7 @@ slackRoute.post('/slack/help', async (c) => {
  return new Response("helpp!!!")
 })
 
-slackRoute.post('/slack/callback', async (c) => {
+slackRoute.get('/slack/callback', async (c) => {
     console.log(c.req)
     return  c.text("test")
    })
